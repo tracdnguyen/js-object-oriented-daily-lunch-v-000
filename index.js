@@ -23,8 +23,8 @@ class Neighborhood {
 
   meals() {
     const everyMeal = this.customers.map(customer => customer.meal());
-    const flatten = [].concat.apply([], everyMeal)
-    return [...new Set(flatten)]
+    const flatten = [].concat.apply([], everyMeal);
+    return [...new Set(flatten)];
   };
 };
 
