@@ -28,7 +28,7 @@ class Neighborhood {
 
 class Customer {
   constructor(name, neighborhoodId) {
-    this.id = ++customerId
+    this.id = ++customerId;
     this.name = name;
     this.neighborhoodId = neighborhoodId;
     store.customers.push(this);
@@ -39,11 +39,11 @@ class Customer {
   };
 
   meals() {
-
+    this.deliveries().map(delivery => delivery.meal());
   };
 
   totalSpent() {
-
+    
   };
 };
 
