@@ -39,7 +39,7 @@ class Customer {
   };
 
   meals() {
-
+    return store.meals.filter(meal => meal.)
   };
 
   totalSpent() {
@@ -55,12 +55,16 @@ class Meal {
     store.meals.push(this);
   };
 
+  setCustomer(customer) {
+    this.customerId = customer.id
+  };
+  
   deliveries() {
 
   };
 
   customers() {
-    
+
   };
 };
 
