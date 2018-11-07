@@ -50,7 +50,7 @@ class Customer {
 };
 
 class Meal {
-  constructor(title, price) {
+  constructor(title, price = 0) {
     this.id = ++mealId;
     this.title = title;
     this.price = price;
