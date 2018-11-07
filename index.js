@@ -55,16 +55,16 @@ class Meal {
     this.title = title;
     this.price = price;
     store.meals.push(this);
-  };
+  }
 
   deliveries() {
     return store.deliveries.filter(delivery => delivery.mealId === this.id);
-  };
+  }
 
   customers() {
-     const everyCustomer = this.deliveries().map(delivery => delivery.customer());
-     return [...new Set(everyCustomer)]
-  };
+    const allCustomers = this.deliveries().map(delivery => delivery.customer());
+    return [...new Set(allCustomers)];
+  }
 
   static byPrice() {
     return store.meals.sort((a, b) => a.price < b.price);
