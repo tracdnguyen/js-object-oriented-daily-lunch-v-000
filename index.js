@@ -43,9 +43,7 @@ class Customer {
   };
 
   totalSpent() {
-    this.meals().reduce(function(meal){
-      return meal.price;
-    }, 0)
+    return this.meals().reduce((total, meal) => (total += meal.price))
   };
 };
 
