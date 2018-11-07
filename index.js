@@ -14,26 +14,26 @@ class Neighborhood {
   };
 
   deliveries() {
-    return 
+    return
   };
 
   customers() {
-    
+
   };
 
   meals() {
-    
+
   };
 };
 
 class Customer {
-  
+
 };
 
 class Meal {
-  
+
 };
 
 class Delivery {
-  
+
 };
