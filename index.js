@@ -56,9 +56,9 @@ class Meal {
   };
 
   setCustomer(customer) {
-    this.customerId = customer.id
+    this.customerId = customer.id;
   };
-  
+
   deliveries() {
 
   };
