@@ -41,7 +41,7 @@ class Customer {
   meals() {
     this.deliveries().map(delivery => delivery.meal());
   };
-
+  
   totalSpent() {
     return this.meals().reduce((total, meal) => (total += meal.price), 0);
   };
@@ -60,7 +60,8 @@ class Meal {
   };
 
   customers() {
-
+     const everyCustomer = this.deliveries().map(delivery => delivery.customer());
+     return [...new Set(everyCustomer)]
   };
 };
 
