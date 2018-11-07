@@ -22,7 +22,7 @@ class Neighborhood {
   };
 
   meals() {
-    const everyMeal = this.customers().map(customer => customer.meal());
+    const everyMeal = this.customers().map(customer => customer.meals());
     const flatten = [].concat.apply([], everyMeal);
     return [...new Set(flatten)];
   };
