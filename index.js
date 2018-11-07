@@ -14,7 +14,7 @@ class Neighborhood {
   };
 
   deliveries() {
-    return
+    
   };
 
   customers() {
