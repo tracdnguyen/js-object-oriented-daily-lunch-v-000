@@ -39,7 +39,7 @@ class Customer {
   };
 
   meals() {
-    return store.meals.filter(meal => meal.)
+    return this.meals().map(meal => meal.id === this.id);
   };
 
   totalSpent() {
