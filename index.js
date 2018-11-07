@@ -33,10 +33,27 @@ class Customer {
     this.neighborhoodId = neighborhoodId;
     store.customers.push(this);
   };
+
+  deliveries() {
+    
+  };
+
+  meals() {
+    
+  };
+
+  totalSpent() {
+    
+  };
 };
 
 class Meal {
-
+  constructor(title, price) {
+    this.id = ++mealId;
+    this.title = title;
+    this.price = price;
+    
+  };
 };
 
 class Delivery {
