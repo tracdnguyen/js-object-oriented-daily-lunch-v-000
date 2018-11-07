@@ -55,10 +55,6 @@ class Meal {
     store.meals.push(this);
   };
 
-  setCustomer(customer) {
-    this.customerId = customer.id;
-  };
-
   deliveries() {
 
   };
