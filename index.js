@@ -56,15 +56,11 @@ class Meal {
   };
 
   deliveries() {
-    
+
   };
 
   customers() {
-    
-  };
 
-  byPrice() {
-    
   };
 };
 
