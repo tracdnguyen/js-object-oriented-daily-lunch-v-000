@@ -30,7 +30,7 @@ class Customer {
   constructor(name, neighborhoodId) {
     this.id = neighborhoodId++
     this.name = name;
-    this.neighborhoodId = neighborhoodId;
+    this.neighborhoodId = neighborhoodId.id;
     store.customers.push(this);
   };
 };
